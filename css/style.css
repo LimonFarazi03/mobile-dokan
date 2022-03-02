@@ -21,3 +21,9 @@ i.fa-solid.fa-user {
 #search-btn:hover{
   background: #EF4A23;
 }
+#image-size{
+  width: 250px;
+}
+#brand-name{
+  color: #EF4A23;
+}
