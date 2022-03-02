@@ -1,9 +1,23 @@
 i.fa-solid.fa-user {
   color: #EF4A23;
-  font-size: 20px;
+  font-size: 22px;
 }
 #account-text {
   color: white;
   line-height: .5;
-  font-size: 18px;
+  font-size: 17px;
+}
+#register {
+  color: rgba(255, 255, 255, 0.5);
+  line-height: .8;
+}
+#search-h1 {
+  font-size: 30px;
+}
+#search-btn{
+  cursor: pointer;
+  transition: .5s;
+}
+#search-btn:hover{
+  background: #EF4A23;
 }
