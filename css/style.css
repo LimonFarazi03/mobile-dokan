@@ -52,9 +52,6 @@ th,td {
 tr:nth-child(even) {
   background-color: #F7F7F7;
 }
-.font-mobile{
-
-}
 #price-chat {
   width: 270px;
   justify-content: center;
