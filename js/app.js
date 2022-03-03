@@ -26,7 +26,7 @@ const displayPhone = (phones) => {
     const parent = document.getElementById('parent-phone')
     const div = document.createElement('div')
     div.innerHTML = `
-      <div class="col">
+      <div class="col mx-auto">
         <div class="card border-0 h-100 shadow-lg p-2 rounded">
           <img class="mx-auto mt-3 mb-4" id="image-size" src="${phone.image}" class="card-img-top" alt="...">
           <div class="card-body">
