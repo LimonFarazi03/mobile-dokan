@@ -6,8 +6,8 @@ const loadData = () => {
     const errorMsg = document.getElementById('error-msg')
     const div = document.createElement('div')
     div.innerHTML = `
-      <div class="alert alert-danger" role="alert">
-          This is a danger alert—check it out!
+      <div class="text-center alert alert-danger" role="alert">
+          input field fill up koren vai
       </div>
     `
   errorMsg.appendChild(div)
@@ -34,7 +34,7 @@ const displayPhone = (phones) => {
             <p class="card-text"></p>
           </div>
           <div>
-            <button class="btn btn-warning my-2 mx-3 text-bold">Details</button>
+            <button onclick="displayDetails(${phone.slug})" class="btn btn-warning my-2 mx-3 text-bold">Details</button>
           </div>
         </div>
       </div>
@@ -42,4 +42,7 @@ const displayPhone = (phones) => {
     parent.appendChild(div)
 
   }
+}
+const displayDetails = () =>{
+  console.log('how are you');
 }

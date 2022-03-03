@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins',sans-serif;
+}
 i.fa-solid.fa-user {
   color: #EF4A23;
   font-size: 22px;
@@ -26,4 +35,27 @@ i.fa-solid.fa-user {
 }
 #brand-name{
   color: #EF4A23;
+}
+table {
+  border-collapse: collapse;
+  width: 60%;
+}
+
+th,td {
+  text-align: left;
+  padding: 5px;
+}
+#tab td {
+  border: 2px solid #e8e8eb;
+}
+
+tr:nth-child(even) {
+  background-color: #F7F7F7;
+}
+.font-mobile{
+
+}
+#price-chat {
+  width: 270px;
+  justify-content: center;
 }
