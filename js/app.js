@@ -34,7 +34,7 @@ const displayPhone = (phones) => {
             <p class="card-text"></p>
           </div>
           <div>
-            <button onclick="displayDetails(${phone.slug})" class="btn btn-warning my-2 mx-3 text-bold">Details</button>
+            <button onclick="displayDetails('${phone.slug}')" class="btn btn-warning my-2 mx-3 text-bold">Details</button>
           </div>
         </div>
       </div>
@@ -43,6 +43,11 @@ const displayPhone = (phones) => {
 
   }
 }
-const displayDetails = () =>{
-  console.log('how are you');
+const displayDetails = (details) =>{
+  const url = `
+    https://openapi.programming-hero.com/api/phone/${details}
+  `
+  fetch(url)
+  .then(response => response.json())
+  .then(data => console.log(data.data))
 }
