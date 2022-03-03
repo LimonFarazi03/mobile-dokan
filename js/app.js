@@ -58,7 +58,7 @@ const setOnDisplay = onTop => {
   const displayPhSpec = document.getElementById('displayPhSpec').innerHTML = `
     <div>
       <h2 class="my-4" id="price-in-bangladesh">
-        <center>Price in Bangladesh</center>
+        <center>${onTop.name} Price in Bangladesh</center>
       </h2>
       <figure id="price-chat" class="mb-5 wp-block-table aligncenter mx-auto">
         <div class="border">
@@ -73,13 +73,13 @@ const setOnDisplay = onTop => {
         </div>
       </figure>
       <div class="text-center my-5">
-        <img height="200px" width="auto" src="./images/logo.png" alt="">
+        <img height="200px" width="auto" src="${onTop.image}" alt="">
       </div>
       <table class="mx-auto">
         <tbody id="tab">
           <tr>
             <td><strong>First Release</strong></td>
-            <td></td>
+            <td>${onTop.releaseDate}</td>
           </tr>
           <tr>
             <td><strong>Colors</strong></td>
@@ -238,7 +238,7 @@ const setOnDisplay = onTop => {
           </tr>
           <tr>
             <td>Chipset</td>
-            <td>Qualcomm Snapdragon 720G (8 nm)</td>
+            <td>${onTop.mainFeatures.chipSet}</td>
           </tr>
           <tr>
             <td>RAM</td>
@@ -250,7 +250,7 @@ const setOnDisplay = onTop => {
           </tr>
           <tr>
             <td>GPU</td>
-            <td>Adreno 618</td>
+            <td></td>
           </tr>
           <tr>
             <th>&nbsp;
@@ -259,7 +259,7 @@ const setOnDisplay = onTop => {
           </tr>
           <tr>
             <td>ROM</td>
-            <td>128 GB</td>
+            <td>${onTop.mainFeatures.memory}</td>
           </tr>
           <tr>
             <td>MicroSD Slot</td>
@@ -284,12 +284,8 @@ const setOnDisplay = onTop => {
             <th></th>
           </tr>
           <tr>
-            <td>Fingerprint</td>
-            <td>✅ In-display (optical)</td>
-          </tr>
-          <tr>
             <td>Face Unlock</td>
-            <td>✅</td>
+            <td>✅${onTop.mainFeatures.sensors}</td>
           </tr>
           <tr>
             <th>&nbsp;
@@ -305,7 +301,7 @@ const setOnDisplay = onTop => {
           </tr>
           <tr>
             <td>Manufactured by</td>
-            <td>Samsung</td>
+            <td>${onTop.brand}</td>
           </tr>
           <tr>
             <td>Made in</td>
